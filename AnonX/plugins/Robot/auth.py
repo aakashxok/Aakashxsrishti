@@ -38,7 +38,7 @@ async def auth(client, message: Message, _):
         _check = await get_authuser_names(message.chat.id)
         count = len(_check)
         if int(count) == 20:
-            return await message.reply_text("**» ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ʜᴀᴠᴇ 20 ᴜsᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ's ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ (ᴀᴜʟ).**")
+            return await message.reply_text("**» 𝙔𝙊𝙐 𝘾𝘼𝙉 𝙃𝘼𝙑𝙀 𝙊𝙉𝙇𝙔 20 𝙐𝙎𝙀𝙍𝙎 𝙄𝙉 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋'𝙨 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙐𝙎𝙀𝙍 𝙇𝙄𝙎𝙏 (𝘼𝙐𝙇).**")
         if token not in _check:
             assis = {
                 "auth_user_id": user.id,
