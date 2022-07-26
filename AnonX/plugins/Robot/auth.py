@@ -66,7 +66,7 @@ async def auth(client, message: Message, _):
     for smex in _check:
         count += 1
     if int(count) == 20:
-        return await message.reply_text("**» ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ʜᴀᴠᴇ 20 ᴜsᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ's ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ (ᴀᴜʟ).**")
+        return await message.reply_text("**» 𝙔𝙊𝙐 𝘾𝘼𝙉 𝙃𝘼𝙑𝙀 𝙊𝙉𝙇𝙔 20 𝙐𝙎𝙀𝙍𝙎 𝙄𝙉 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋'𝙨 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙐𝙎𝙀𝙍 𝙇𝙄𝙎𝙏 (𝘼𝙐𝙇).**")
     if token not in _check:
         assis = {
             "auth_user_id": user_id,
@@ -79,10 +79,10 @@ async def auth(client, message: Message, _):
             if user_id not in get:
                 get.append(user_id)
         await save_authuser(message.chat.id, token, assis)
-        await message.reply_sticker("CAACAgUAAxkBAAIjRmKPXjN-4bwPCXyRDgQJi4EGns7mAALxBwACXqhRVO2OaCyX0hkNJAQ")
-        return await message.reply_text("**» ᴀᴅᴅᴇᴅ ᴛᴏ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏꜰ ʏᴏᴜʀ ɢʀᴏᴜᴘ.**")
+        await message.reply_sticker("")
+        return await message.reply_text("**» 𝘼𝘿𝘿𝙀𝘿 𝙏𝙊 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙐𝙎𝙀𝙍 𝙇𝙄𝙎𝙏 𝙊𝙁 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋.**")
     else:
-        await message.reply_text("**» ᴀʟʀᴇᴀᴅʏ ɪɴ ᴛʜᴇ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ.**")
+        await message.reply_text("**» 𝙐𝙎𝙀𝙍 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙄𝙉 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙇𝙄𝙎𝙏.**")
 
 
 @app.on_message(
