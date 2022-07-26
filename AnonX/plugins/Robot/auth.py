@@ -26,7 +26,7 @@ AUTHUSERS_COMMAND = get_command("AUTHUSERS_COMMAND")
 async def auth(client, message: Message, _):
     if not message.reply_to_message:
         if len(message.command) != 2:
-            return await message.reply_text("**» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ's ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ.**")
+            return await message.reply_text("**» 𝙍𝙀𝙋𝙇𝙔 𝙏𝙊 𝘼 𝙐𝙎𝙀𝙍 𝙊𝙍 𝙐𝙎𝙀𝙍_𝙄𝘿/𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀.**")
         user = message.text.split(None, 1)[1]
         if "@" in user:
             user = user.replace("@", "")
