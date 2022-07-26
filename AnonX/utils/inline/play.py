@@ -59,11 +59,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴍᴇɴᴜ ✯",
+                text="𝙈𝙀𝙉𝙐",
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=f"{config.SUPPORT_GROUP}"
+                text="𝙎𝙐𝙋𝙋𝙊𝙍𝙏", url=f"{config.SUPPORT_GROUP}"
             )
         ],
         [
@@ -311,16 +311,16 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⇆ sʜᴜғғʟᴇ ⇆",
+                text="𝙎𝙃𝙐𝙁𝙁𝙇𝙀",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="↻ ʟᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
+                text="𝙇𝙊𝙊𝙋", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="↻ ʙᴀᴄᴋ ↻",
+                text="𝘼𝘾𝙃𝘼 𝙑𝘼𝙄",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
         ],
