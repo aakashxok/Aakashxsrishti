@@ -108,7 +108,7 @@ async def unauthusers(client, message: Message, _):
                 get.remove(user.id)
         if deleted:
             await message.reply_sticker("")
-            return await message.reply_text("**» ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏꜰ ᴛʜɪs ɢʀᴏᴜᴘ.**")
+            return await message.reply_text("**» 𝙍𝙀𝙈𝙊𝙑𝙀𝘿 𝙐𝙎𝙀𝙍 𝙁𝙍𝙊𝙈 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙇𝙄𝙎𝙏.**")
         else:
             return await message.reply_text("**» ᴛᴀʀɢᴇᴛᴇᴅ ᴜsᴇʀ ɪs ɴᴏᴛ ᴀɴ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀ.**")
     user_id = message.reply_to_message.from_user.id
