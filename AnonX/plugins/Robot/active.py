@@ -24,7 +24,7 @@ async def activevc(_, message: Message):
         try:
             title = (await app.get_chat(x)).title
         except Exception:
-            title = "ᴩʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ"
+            title = "𝙋𝙍𝙄𝙑𝘼𝙏𝙀 𝘾𝙃𝘼𝙏𝙎"
         if (await app.get_chat(x)).username:
             user = (await app.get_chat(x)).username
             text += f"<b>{j + 1}.</b>  [{title}](https://t.me/{user})[`{x}`]\n"
@@ -32,7 +32,7 @@ async def activevc(_, message: Message):
             text += f"<b>{j + 1}. {title}</b> [`{x}`]\n"
         j += 1
     if not text:
-        await mystic.edit_text("ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇᴄʜᴀᴛs ᴏɴ ᴍᴜsɪᴄʙᴏᴛ...")
+        await mystic.edit_text("𝙉𝙊 𝘼𝘾𝙏𝙄𝙑𝙀 𝙑𝙊𝙄𝘾𝙀𝘾𝙃𝘼𝙏𝙎...")
     else:
         await mystic.edit_text(
             f"**ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇᴄʜᴀᴛs ᴏɴ ᴍᴜsɪᴄ ʙᴏᴛ :-**\n\n{text}",
