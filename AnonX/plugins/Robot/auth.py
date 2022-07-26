@@ -95,7 +95,7 @@ async def auth(client, message: Message, _):
 async def unauthusers(client, message: Message, _):
     if not message.reply_to_message:
         if len(message.command) != 2:
-            return await message.reply_text("**» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ's ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ.**")
+            return await message.reply_text("**» 𝙍𝙀𝙋𝙇𝙔 𝙏𝙊 𝘼 𝙐𝙎𝙀𝙍 𝙊𝙍 𝙐𝙎𝙀𝙍_𝙄𝘿/𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀.**")
         user = message.text.split(None, 1)[1]
         if "@" in user:
             user = user.replace("@", "")
@@ -107,7 +107,7 @@ async def unauthusers(client, message: Message, _):
             if user.id in get:
                 get.remove(user.id)
         if deleted:
-            await message.reply_sticker("CAACAgUAAxkBAAIjQWKPXN20bTyku-xHuWi1piQjwfnqAALVBAACkG4oV_eRTF-VyhGfJAQ")
+            await message.reply_sticker("")
             return await message.reply_text("**» ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏꜰ ᴛʜɪs ɢʀᴏᴜᴘ.**")
         else:
             return await message.reply_text("**» ᴛᴀʀɢᴇᴛᴇᴅ ᴜsᴇʀ ɪs ɴᴏᴛ ᴀɴ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀ.**")
