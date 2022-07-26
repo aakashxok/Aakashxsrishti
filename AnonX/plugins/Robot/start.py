@@ -48,7 +48,7 @@ async def start_comm(client, message: Message, _):
             return await message.reply_text(_["song_2"])
         if name[0:3] == "sta":
             m = await message.reply_text(
-                f"🥱 ɢᴇᴛᴛɪɴɢ ʏᴏᴜʀ ᴩᴇʀsᴏɴᴀʟ sᴛᴀᴛs ғʀᴏᴍ {config.MUSIC_BOT_NAME} sᴇʀᴠᴇʀ."
+                f"𝙂𝙀𝙏𝙏𝙄𝙉𝙂 𝙔𝙊𝙐𝙍 𝙋𝙀𝙍𝙎𝙊𝙉𝘼𝙇 𝙎𝙏𝘼𝙏𝙎 𝙁𝙍𝙊𝙈 {config.MUSIC_BOT_NAME} 𝙎𝙀𝙍𝙑𝙀𝙍."
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
