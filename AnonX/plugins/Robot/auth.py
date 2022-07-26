@@ -110,7 +110,7 @@ async def unauthusers(client, message: Message, _):
             await message.reply_sticker("")
             return await message.reply_text("**» 𝙍𝙀𝙈𝙊𝙑𝙀𝘿 𝙐𝙎𝙀𝙍 𝙁𝙍𝙊𝙈 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙇𝙄𝙎𝙏.**")
         else:
-            return await message.reply_text("**» ᴛᴀʀɢᴇᴛᴇᴅ ᴜsᴇʀ ɪs ɴᴏᴛ ᴀɴ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀ.**")
+            return await message.reply_text("**» 𝙏𝘼𝙍𝙂𝙀𝙏𝙀𝘿 𝙐𝙎𝙀𝙍 𝙄𝙎 𝙉𝙊𝙏 𝙄𝙉 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙇𝙄𝙎𝙏.**")
     user_id = message.reply_to_message.from_user.id
     token = await int_to_alpha(user_id)
     deleted = await delete_authuser(message.chat.id, token)
@@ -119,7 +119,7 @@ async def unauthusers(client, message: Message, _):
         if user_id in get:
             get.remove(user_id)
     if deleted:
-        await message.reply_sticker("CAACAgUAAxkBAAIjQWKPXN20bTyku-xHuWi1piQjwfnqAALVBAACkG4oV_eRTF-VyhGfJAQ")
+        await message.reply_sticker("")
         return await message.reply_text("**» ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏꜰ ᴛʜɪs ɢʀᴏᴜᴘ.**")
     else:
         return await message.reply_text("**» ᴛᴀʀɢᴇᴛᴇᴅ ᴜsᴇʀ ɪs ɴᴏᴛ ᴀɴ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀ.**")
