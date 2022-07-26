@@ -108,7 +108,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <code>sᴜᴅᴏʟɪsᴛ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
+                    f"{message.from_user.mention} 𝙅𝙐𝙎𝙏 𝙎𝙏𝘼𝙍𝙏𝙀𝘿 𝙔𝙊𝙐𝙍 𝘽𝙊𝙏 𝙏𝙊 𝘾𝙃𝙀𝘾𝙆<code>sᴜᴅᴏʟɪsᴛ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
@@ -140,14 +140,14 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-😲**ᴛʀᴀᴄᴋ ɪɴғᴏʀɴᴀᴛɪᴏɴ**😲
+**𝙏𝙍𝘼𝘾𝙆 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉**
 
-📌 **ᴛɪᴛʟᴇ:** {title}
+📌 **𝙏𝙄𝙏𝙇𝙀:** {title}
 
-⏳ **ᴅᴜʀᴀᴛɪᴏɴ:** {duration} ᴍɪɴᴜᴛᴇs
-👀 **ᴠɪᴇᴡs:** `{views}`
-⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ:** {published}
-🎥 **ᴄʜᴀɴɴᴇʟ:** {channel}
+⏳ **𝘿𝙐𝙍𝘼𝙏𝙄𝙊𝙉:** {duration} ᴍɪɴᴜᴛᴇs
+👀 **𝙑𝙄𝙀𝙒𝙎:** `{views}`
+⏰ **𝙋𝙐𝘽𝙇𝙄𝙎𝙃𝙀𝘿 𝘽𝙔:** {published}
+🎥 **𝘾𝙃𝘼𝙉𝙉𝙀𝙇:** {channel}
 📎 **ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
 🔗 **ʟɪɴᴋ:** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
 
