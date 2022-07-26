@@ -54,7 +54,7 @@ async def auth(client, message: Message, _):
             await message.reply_sticker("")
             return await message.reply_text("**» 𝘼𝘿𝘿𝙀𝘿 𝙏𝙊 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙐𝙎𝙀𝙍 𝙇𝙄𝙎𝙏 𝙊𝙁 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋.**")
         else:
-            await message.reply_text("**» ᴀʟʀᴇᴀᴅʏ ɪɴ ᴛʜᴇ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ.**")
+            await message.reply_text("**» 𝙐𝙎𝙀𝙍 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙄𝙉 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙇𝙄𝙎𝙏.**")
         return
     from_user_id = message.from_user.id
     user_id = message.reply_to_message.from_user.id
