@@ -52,7 +52,7 @@ async def auth(client, message: Message, _):
                     get.append(user.id)
             await save_authuser(message.chat.id, token, assis)
             await message.reply_sticker("")
-            return await message.reply_text("**» ᴀᴅᴅᴇᴅ ᴛᴏ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏꜰ ʏᴏᴜʀ ɢʀᴏᴜᴘ.**")
+            return await message.reply_text("**» 𝘼𝘿𝘿𝙀𝘿 𝙏𝙊 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙕𝙀𝘿 𝙐𝙎𝙀𝙍 𝙇𝙄𝙎𝙏 𝙊𝙁 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋.**")
         else:
             await message.reply_text("**» ᴀʟʀᴇᴀᴅʏ ɪɴ ᴛʜᴇ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ.**")
         return
