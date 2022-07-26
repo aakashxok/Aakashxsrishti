@@ -26,11 +26,11 @@ def help_pannel(_, START: Union[bool, int] = None):
         [
             [
                 InlineKeyboardButton(
-                    text="ᴀᴅᴍɪɴ",
+                    text="𝘼𝘿𝙈𝙄𝙉",
                     callback_data="help_callback hb1",
                 ),
                 InlineKeyboardButton(
-                    text="ᴀᴜᴛʜ",
+                    text="𝘼𝙐𝙏𝙃",
                     callback_data="help_callback hb2",
                 ),
                 InlineKeyboardButton(
